@@ -3,7 +3,7 @@
 <head>
     <script src="lists.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="script.js" ></script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +15,16 @@
     <p>
         Nomi di animali che iniziano con una certa lettera dell'alfabeto.
     </p>
+
+    <div class="show">
+        
+    </div>
+
+    <script>
+        const divShow = document.querySelector('.show')
+        keydownShow(animaliAnimalPediaSimplified,divShow)
+    </script>
+
 
     <script>
             document.addEventListener('keydown',(e)=> {
