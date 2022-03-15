@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheKeydownWebsite</title>
+</head>
+<body>
+    <h1>Welcome to The Keydown Website!</h1>
+    <p>    
+        On this website things happen when you press a key on your keyboard.
+    </p>
+    
+    <a href="./animals.html" tasti="na">Nomi di animali [a]</a>
+
+    <script>
+        const link = document.querySelector('a')
+        document.addEventListener('keydown',(e)=> {
+            if (e.key === 'a') {
+                window.location.href = "./animals.html";
+            }
+        })
+    </script>
+    
+</body>
+</html>
